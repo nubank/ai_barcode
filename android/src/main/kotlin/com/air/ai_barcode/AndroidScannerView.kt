@@ -86,6 +86,13 @@ class AndroidScannerView(binaryMessenger: BinaryMessenger, context: Context, vie
 
         zxing.setAutoFocus(true);
         zxing.setAspectTolerance(0.5f);
+
+        zxing.setLaserEnabled(false);
+        zxing.setBorderStrokeWidth(0);
+        zxing.setBorderLineLength(0);
+        zxing.setSquareViewFinder(false);
+        zxing.setMaskColor(0);
+        
         return zxing;
     }
 
